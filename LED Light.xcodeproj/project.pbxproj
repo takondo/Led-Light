@@ -14,6 +14,7 @@
 		FE86E2E91C89288100B5207B /* LED_Light.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE86E2E71C89288100B5207B /* LED_Light.xcdatamodeld */; };
 		FE86E2EB1C89288100B5207B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE86E2EA1C89288100B5207B /* Assets.xcassets */; };
 		FE86E2EE1C89288100B5207B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE86E2EC1C89288100B5207B /* LaunchScreen.storyboard */; };
+		FE86E2F61C8928B600B5207B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE86E2F51C8928B600B5207B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FE86E2EA1C89288100B5207B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE86E2ED1C89288100B5207B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE86E2EF1C89288100B5207B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE86E2F51C8928B600B5207B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86E2F61C8928B600B5207B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		FE86E2CF1C89288100B5207B = {
 			isa = PBXGroup;
 			children = (
+				FE86E2F51C8928B600B5207B /* AVFoundation.framework */,
 				FE86E2DA1C89288100B5207B /* LED Light */,
 				FE86E2D91C89288100B5207B /* Products */,
 			);

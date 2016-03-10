@@ -19,6 +19,23 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)changeSwitch {
+    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if (ledLightSwitch.on == YES) {
+        self.view.backgroundColor = [UIColor whiteColor];
+        
+        [captureDevice lockForConfiguration:NULL];
+        captureDevice.torchMode = AVCaptureTorchModeOn;
+        [captureDevice unlockForConfiguration];
+    }else{
+        self.view.backgroundColor = [UIColor blackColor];
+        
+        [captureDevice lockForConfiguration:NULL];
+        captureDevice.torchMode = AVCaptureTorchModeOff;
+        [captureDevice unlockForConfiguration];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
